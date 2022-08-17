@@ -35,8 +35,6 @@ img {
   list-style: none;
   margin: 0;
   padding: 0px 15px 0px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
   
   display: flex;
   flex-direction: row;
