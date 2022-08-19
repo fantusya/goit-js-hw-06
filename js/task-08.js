@@ -9,15 +9,16 @@ function onregisterFormInput(event) {
     const {
     elements: { email, password }
     } = event.currentTarget;
-
-    const formdata = new FormData(event.currentTarget);
     
     if (email.value === "" || password.value === "") {
         return alert("Please fill in all the fields!");
     } else {
-        formdata.forEach((value, name) => {
-        console.log(`${name} of the field: ${value}`);
-    })}
+        const infoObj = {
+            email: email.value,
+            password: password.value
+        }
+        console.log(infoObj);
+    }
 
     event.currentTarget.reset();
 }
